@@ -1,0 +1,35 @@
+
+<div class="main">
+
+	<div class="container-fluid">
+
+		<div class="col-md-3">
+			<p class = "column-cool"> This is a column. col-md-3. How great! Columns are like soooo cool. The grid is the best! It makes everything else seem like dirt. That is how great the grid is. Yayyyy grid.</p>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<h1>Awesome Famous Paintings</h1>
+
+			
+			<% @paintings.each do |p| %>
+
+
+				<div class="painting">
+					<%=p.name%>
+				</div>
+				<div class="details">
+					Painted by <%=p.artist%> in <%=p.year %>.
+				</div>
+
+			<% end %>
+		</div>
+	
+		<div class="col-md-3">
+			This is another column.
+			<img src = 
+		</div>	
+	
+	</div>
+</div>
